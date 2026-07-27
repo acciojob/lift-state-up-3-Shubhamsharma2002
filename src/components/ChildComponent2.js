@@ -5,10 +5,9 @@ const ChildComponent2 = ({ setSelectedOption }) => {
     <div>
       <h2>Child Component 2</h2>
 
-      <select onChange={(e) => setSelectedOption(e.target.value)}>
-        <option value="">Select</option>
-        <option value="Option 2">Option 2</option>
-      </select>
+      <button onClick={() => setSelectedOption("Option 2")}>
+        Option 2
+      </button>
     </div>
   );
 };
